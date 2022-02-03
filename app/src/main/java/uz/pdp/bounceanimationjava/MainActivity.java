@@ -16,19 +16,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initViews();
-    }
-
-    private void initViews() {
-        Button button = findViewById(R.id.button);
-        ImageView imageView = findViewById(R.id.image);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.together);
-                imageView.startAnimation(animation);
-            }
-        });
     }
 }
