@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce);
+                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.sequential);
                 imageView.startAnimation(animation);
             }
         });
